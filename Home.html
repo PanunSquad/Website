@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webpage</title>
+    <style>
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #000000;
+            color: #00eaff;
+        }
+        
+        /* Light Mode */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #00eaff;
+        }
+        
+        /* Top Bar */
+        .top-bar {
+
+            background-color: #023241;
+            padding: 11px;
+            border-radius: 11px;
+            text-align: center;
+            
+            
+        }
+        
+        .top-bar a {
+            
+            color: #00eaff;
+            margin: 0 10px;
+            text-decoration: none;
+            width: 85.69px;
+            height: 35.13px;
+
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 31.3734px;
+            line-height: 37px;
+
+            color: #90F6FF;
+        }
+
+        .logo {
+            z-index: 1;
+            position: absolute;
+            transition: transform .2s; /* Animation */
+            left:30px;
+            top: 3px;
+        }
+
+        .logo:hover {
+            transform: scale(1.2);
+        }
+        
+        /* Main Content */
+        .main-content {
+            text-align: left;
+            margin-top: 50px;
+        }
+        
+        .main-content h1 {
+            position: relative;
+            left: 0.01%;
+            right: 0.04%;
+            top: 0%;
+            bottom: 49.98%;
+            
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60.889px;
+            line-height: 83px;
+
+            color: #B0F9FF;
+        }
+        
+        .main-content p {
+            
+            left: 0%;
+            right: 0%;
+            top: 49.94%;
+            bottom: 0%;
+            width: 920px    ;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36.6139px;
+            line-height: 50px;
+
+            color: #00EAFF;
+        }
+        
+        .main-content button {
+            padding: 10px 20px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36.6139px;
+            line-height: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #0075CA;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+    <script>
+        // Function to toggle between dark and light mode
+        function toggleMode() {
+            var body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        }
+    </script>
+</head>
+<body class="dark-mode">
+    <img src="Icons.svg" class="logo">
+    <div class="top-bar">
+        <div class="top-bar">
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Resources</a>
+            <a href="#">Gallery</a>
+            <a href="#">Skills</a>
+            <a href="#">Events</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Empowering Collaboration,<br>Unlocking Potential</h1>
+        <p>A passionate community of learners, creators, and collaborators, dedicated to mastering various skills within the vast realm of computer science.</p>
+        <button>Sign Up</button>
+        <br/><br/>
+        <button onclick="toggleMode()">Toggle Mode</button>
+    </div>
+</body>
+</html>
