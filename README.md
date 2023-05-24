@@ -1,6 +1,6 @@
 # Website
 
-Welcome to the Project Name repository! This project is maintained by a team of enthusiastic developers. As beginners, we follow a specific branching strategy to organize our work effectively. Please read this document carefully before making any changes.
+Yo! As beginners, we follow a specific branching strategy to organize our work effectively. Please read this document carefully before making any changes.
 
 ## Branching Strategy
 
@@ -11,5 +11,5 @@ We use the following branching strategy for our development workflow:
 
 ## Getting Started
 
-To get started, clone this repository (learn git basics first), contribute your part and commit and push changes to newbie. You may create a new branch (use a suitable name such as your own for the branch) if you don't want others to modify your contribution.
+To get started, clone this repository (learn git basics first), contribute your part, commit and push changes to the `newbie`. You may create a new branch (use a suitable name such as your own for the branch) if you don't want others to modify your contribution.
 
