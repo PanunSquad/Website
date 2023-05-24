@@ -43,14 +43,18 @@
             line-height: 83px;
             width: 98.49%;
             
-            border-radius: 21px;
+            display: flex;
+            border-radius: 30px;
             margin-top: 30px;
             margin-left: 8.3px;
          
-            position: fixed;
+            position: sticky;
+            
+            
             justify-items: center;
-            align-items: start;
-            box-shadow: 0 3px 21px   #00eaff;
+            align-items: center;
+            box-shadow: 0 3px 21px #00eaff;
+            vertical-align: middle;
             
             
             
@@ -66,8 +70,9 @@
             padding: 11px;
             font-family: 'Open Sans';
             font-style: normal;
-            font-weight: 684.93;
+            font-weight: 632;
             font-size: 30px;
+            
             margin-left: 21px;
             
             vertical-align: middle;
@@ -91,25 +96,31 @@
         }
 
         .sign-in {
+
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 632;
             font-size: 30px;
 
-            right: 11px;
+            right: 30px;
+
             height: 81.2px;
             width: 209px;
+            
             position: fixed;
-            margin-left: 300px;
+            
+            display: flex;
             background-color: #00eaff;
             color: #000000;
             border: none;
+
             cursor: pointer;
-            border-radius: 21px;
+            border-radius: 30px;
             transition: transform .2s;
             justify-content: center;
             align-items: center;
-            scale: 0.83;
+            
+            vertical-align: middle;
             
         }
 
@@ -124,72 +135,90 @@
         }
         
         .main-content h1 {
-            position: relative;
-            
-            top: 0%;
-            left: 0%;
-            bottom: 49.98%;
+            text-indent: 3;
             
             font-family: 'Open Sans';
             font-style: normal;
-            font-weight: 803;
-            font-size: 54.2px;
-            line-height: 83px;
-
+            font-weight: 632;
+            font-size: 83px;
+            line-height: 111px;
+            width: 1111px;
             margin-top: 11%;
-            margin-left: 30px;
+            margin-left: 62.21px;
 
             color: #a2f7ff;
         }
         
         .main-content p {
             
-            left: 0%;
-            right: 0%;
-            top: 49.94%;
-            bottom: 0%;
-            width: 920px;
+            
+            width: 1001px;
+            
             font-family: 'Open Sans';
             font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 50px;
-            margin-left: 30px;
-            margin-top: 30px;
+            font-weight: 300;
+            font-size: 49px;
+            line-height: 62.21px;
+            margin-left: 62.21px;
+            
 
             color: #00EAFF;
         }
         
         .sign-up {
             
-
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 632;
             font-size: 36.6139px;
 
-            margin-top: 30px;
-            
-
             line-height: 92px;
             width: 300px;
-
-            left: 0%;
+            margin-left: 62.21px;
+            
             background-color: #0075CA;
             color: #ffffff;
             border: none;
             cursor: pointer;
-            border-radius: 21px;
+            border-radius: 30px;
             transition: transform .2s;
-            justify-content: start;
-            align-items: start;
-            scale: 0.83
+         
+            
             
         }
         .sign-up:hover {
             transform: scale(1.1);
         }
 
+        .theme {
+            
+           
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            position: fixed;
+            right: 248.84211px;
+            background-color: #007a93;
+            border: none;
+            cursor: pointer;
+            height: 92px;
+            width: 92px;
+            transition: transform 0.2s;
+            scale: 0.83;
+            content: url("LM\ icon.svg");
+            
+        }
+        
+        .theme img {
+            vertical-align: middle;
+            border-radius: 100%;
+            scale: 0.83;
+            align-self: center;
+        }
+       
         
         
     </style>
@@ -213,6 +242,7 @@
             <a href="#">Gallery</a>
             <a href="#">Skills</a>
             <a href="#">Events</a>
+            <button class="theme" onclick="toggleMode()"><img class="theme"></button>
             <button class="sign-in">Sign in</button>
         </div>
      </div>
@@ -223,6 +253,5 @@
         <br><br>
         <button class="sign-up">Sign Up</button>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <button onclick="toggleMode()"><img src="LM icon.svg"></button>
 </body>
 </html>
