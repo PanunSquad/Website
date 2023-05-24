@@ -7,6 +7,7 @@
         body.dark-mode {
             background-color: #000000;
             color: #00eaff;
+
         }
         
         /* Light Mode */
@@ -20,21 +21,39 @@
             background-color: #000000;
             color: #000000;
             z-index: 1;
-            height: 111px;
+            height: 128px;
             width: 100%;
+            padding-left: 3px;
+            padding-right: 11px;
             top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border-end-start-radius: 30px;
+
+            border-end-end-radius: 30px;
+            
         }
         /* Top Bar */
         .top-bar {
 
             background-color: #023241;
-            padding: 11px;
+            
             line-height: 83px;
-            width: 98%;
+            width: 98.49%;
+            
             border-radius: 21px;
             margin-top: 30px;
-            margin-right: 30px;
+            margin-left: 8.3px;
+         
             position: fixed;
+            justify-items: center;
+            align-items: start;
+            box-shadow: 0 3px 21px   #00eaff;
+            
+            
+            
             
         }
         
@@ -43,43 +62,43 @@
             color: #00eaff;
             margin: 0 11px;
             text-decoration: none;
-            width: 85.69px;
-            height: 35.13px;
-            padding: 30px;
+            
+            padding: 11px;
             font-family: 'Open Sans';
             font-style: normal;
-            font-weight: 700;
-            font-size: 31.3734px;
-            line-height: 37px;
+            font-weight: 684.93;
+            font-size: 30px;
+            margin-left: 21px;
+            
             vertical-align: middle;
             color: #90F6FF;
             
         }
 
-        .top-bar img {
+        .logo {
             
             position:fixed;
             transition: transform .2s; /* Animation */
             left:30px;
-            top: 3px;
+            top: 1.1px;
             vertical-align: middle;
-            scale: 1.2;
+            
             margin-top: 21px;
         }
 
-        .top-bar img:hover {
+        .logo:hover {
             transform: scale(1.2);
         }
 
-        .top-bar button {
+        .sign-in {
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 632;
-            font-size: 36.6139px;
+            font-size: 30px;
 
             right: 11px;
-            height: 83px;
-            width: 238.89px;
+            height: 81.2px;
+            width: 209px;
             position: fixed;
             margin-left: 300px;
             background-color: #00eaff;
@@ -91,9 +110,10 @@
             justify-content: center;
             align-items: center;
             scale: 0.83;
+            
         }
 
-        .top-bar button:hover {
+        .sign-in:hover {
             transform: scale(1.2);
         }
         
@@ -105,19 +125,19 @@
         
         .main-content h1 {
             position: relative;
-            left: 0.01%;
-            right: 0.04%;
+            
             top: 0%;
+            left: 0%;
             bottom: 49.98%;
             
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 803;
-            font-size: 60.889px;
+            font-size: 54.2px;
             line-height: 83px;
 
             margin-top: 11%;
-            margin-left: 49.89px;
+            margin-left: 30px;
 
             color: #a2f7ff;
         }
@@ -128,20 +148,20 @@
             right: 0%;
             top: 49.94%;
             bottom: 0%;
-            width: 1111px;
+            width: 920px;
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 400;
-            font-size: 36.6139px;
+            font-size: 30px;
             line-height: 50px;
-            margin-left: 49.98px;
+            margin-left: 30px;
             margin-top: 30px;
 
             color: #00EAFF;
         }
         
-        .main-content button {
-            padding: 11px 21px;
+        .sign-up {
+            
 
             font-family: 'Open Sans';
             font-style: normal;
@@ -149,23 +169,24 @@
             font-size: 36.6139px;
 
             margin-top: 30px;
-            margin-left: 30px;
+            
 
             line-height: 92px;
             width: 300px;
 
-            display: flex;
+            left: 0%;
             background-color: #0075CA;
             color: #ffffff;
             border: none;
             cursor: pointer;
             border-radius: 21px;
             transition: transform .2s;
-            justify-content: center;
-            align-items: center;
+            justify-content: start;
+            align-items: start;
+            scale: 0.83
             
         }
-        .main-content button:hover {
+        .sign-up:hover {
             transform: scale(1.1);
         }
 
@@ -184,7 +205,7 @@
 <body class="dark-mode">
     <div class="box">
         <div class="top-bar">
-            <img src="Logo.svg">
+            <img class="logo" src="Logo.svg">
             <a><a></a></a>
             <a href="#">Home</a>
             <a href="#">Projects</a>
@@ -192,16 +213,16 @@
             <a href="#">Gallery</a>
             <a href="#">Skills</a>
             <a href="#">Events</a>
-            <button>Sign in</button>
+            <button class="sign-in">Sign in</button>
         </div>
      </div>
     <div class="main-content">
         <h1>Empowering Collaboration,<br>Unlocking Potential</h1>
         <p>A passionate community of learners, creators, and collaborators, dedicated to mastering various skills within the vast realm of computer science.</p>
+    </div>
         <br><br>
-        <button>Sign Up</button>
+        <button class="sign-up">Sign Up</button>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <button onclick="toggleMode()"><img src="LM icon.svg"></button>
-    </div>
 </body>
 </html>
