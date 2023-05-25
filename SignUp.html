@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <style>
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #000000;
+            color: #00eaff;
+        }
+        
+        /* Light Mode */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #00eaff;
+        }
+        .logo {
+            
+            position: fixed;
+            transition: transform .2s; /* Animation */
+            left: 30px;
+            
+            vertical-align: middle;
+            
+            
+        }
+
+        .logo:hover {
+            transform: scale(1.2);
+        }
+
+        .form-area {
+            
+            position: fixed;
+            top: 11%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 830px;
+            height: 632px;
+            margin: auto;
+            background-color: #023241;
+            border-radius: 30px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #00656e;
+            box-shadow: 0 0 8.3px #00eaff;
+
+        }
+
+        form {
+            margin-top: 3%;
+            
+        }
+
+        
+        .mb-3 {
+    
+           padding: 3%;
+           text-align:start;
+        }
+
+        .form-label {
+            
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 632;
+            font-size: 21px;
+            margin-left: 9.2%;
+            
+            
+        }
+        .form-control {
+            position: relative;
+            background-color: #021617;
+            border-style: none;
+            border-radius: 21px;
+            margin-left: 8.3%;
+            width: 83%;
+            height: 63.2px;
+        }
+      
+
+        .mb-3 button {
+            
+            margin-left: 32.0024%;
+            background-color: #0385E3;
+            width: 281px;
+            height: 74px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 632;
+            font-size: 30px;
+            color: #ffffff;
+            border-style: none;
+            border-radius: 21px;
+            
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.2);
+        }
+
+        .sign-in {
+            position: fixed;
+            right: 1%;
+            top: 3%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 632;
+            font-size: 21px;
+            
+        }
+        
+        .sign-in button {
+            margin-left: 21px;
+            height: 54.2px;
+            width: 128px;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 632;
+            font-size: 21px;
+            border-radius: 30px;
+            border-style:solid;
+            border-color: #00eaff;
+            justify-content: center;
+            background-color: #000000;
+            color: #00eaff;
+            transition: transform 0.2s;
+        }
+
+
+    </style>
+    <script>
+        // Function to toggle between dark and light mode
+        function toggleMode() {
+            var body = document.querySelector('body');
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+        }
+    </script>
+</head>
+<body class="dark-mode">
+    <img class="logo" src="Logo.svg">
+    <div class="sign-in">Already have an account?<button>Sign in</button></div>
+
+    <div class="form-area">
+        <form>
+            <div class="mb-3">
+                <label for="exampleUsername" class="form-label">Username</label><br>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label><br>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label><br>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

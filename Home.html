@@ -14,6 +14,7 @@
         body.light-mode {
             background-color: #ffffff;
             color: #00eaff;
+
         }
         .box {
             position: fixed;
@@ -21,7 +22,8 @@
             background-color: #000000;
             color: #000000;
             z-index: 1;
-            height: 128px;
+            height: 149.89px;
+            box-shadow: 0 21px 30px #000000;
             width: 100%;
             padding-left: 3px;
             padding-right: 11px;
@@ -34,6 +36,11 @@
 
             border-end-end-radius: 30px;
             
+        }
+        
+        .top-bar a.active {
+          border-bottom: 3px solid #00eaff;
+          
         }
         /* Top Bar */
         .top-bar {
@@ -48,18 +55,17 @@
             margin-top: 30px;
             margin-left: 8.3px;
          
-            position: sticky;
+            
             
             
             justify-items: center;
             align-items: center;
             box-shadow: 0 3px 21px #00eaff;
             vertical-align: middle;
-            
-            
-            
+            transition: transform .2s;
             
         }
+
         
         .top-bar a {
             
@@ -67,28 +73,24 @@
             margin: 0 11px;
             text-decoration: none;
             
+            display: block;
             padding: 11px;
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 632;
             font-size: 30px;
+          
             
-            margin-left: 21px;
             
-            vertical-align: middle;
             color: #90F6FF;
             
         }
 
         .logo {
             
-            position:fixed;
+            position: fixed;
             transition: transform .2s; /* Animation */
-            left:30px;
-            top: 1.1px;
-            vertical-align: middle;
-            
-            margin-top: 21px;
+            left: 30px;
         }
 
         .logo:hover {
@@ -105,7 +107,7 @@
             right: 30px;
 
             height: 81.2px;
-            width: 209px;
+            width: 14.42%;
             
             position: fixed;
             
@@ -120,30 +122,33 @@
             justify-content: center;
             align-items: center;
             
-            vertical-align: middle;
+            
             
         }
 
         .sign-in:hover {
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
         
         /* Main Content */
         .main-content {
             text-align: left;
-            margin-top: 111px;
+            margin-top: 83px;
+            position: relative;
+            
+
         }
         
+    
         .main-content h1 {
-            text-indent: 3;
+            
             
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 632;
-            font-size: 83px;
-            line-height: 111px;
-            width: 1111px;
-            margin-top: 11%;
+            font-size: 63.2px;
+            line-height: auto;
+            margin-top: 14.42%;
             margin-left: 62.21px;
 
             color: #a2f7ff;
@@ -157,10 +162,10 @@
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 300;
-            font-size: 49px;
+            font-size: 32.24px;
             line-height: 62.21px;
             margin-left: 62.21px;
-            
+            height: auto;
 
             color: #00EAFF;
         }
@@ -181,13 +186,14 @@
             border: none;
             cursor: pointer;
             border-radius: 30px;
-            transition: transform .2s;
-         
+            transition: transform 0.2s; 
             
             
         }
         .sign-up:hover {
+            
             transform: scale(1.1);
+          
         }
 
         .theme {
@@ -206,7 +212,7 @@
             cursor: pointer;
             height: 92px;
             width: 92px;
-            transition: transform 0.2s;
+            transition: transform 0.83s;
             scale: 0.83;
             content: url("LM\ icon.svg");
             
@@ -218,6 +224,14 @@
             scale: 0.83;
             align-self: center;
         }
+        .theme:hover {
+            transform: rotate(182deg);
+        }
+        .theme::after{
+            content: url("DM\ Icon.svg");
+        
+        }
+
        
         
         
@@ -235,14 +249,14 @@
     <div class="box">
         <div class="top-bar">
             <img class="logo" src="Logo.svg">
-            <a><a></a></a>
-            <a href="#">Home</a>
+            <a><a><a></a></a></a>
+            <a href="#" class="active">Home</a>
             <a href="#">Projects</a>
             <a href="#">Resources</a>
             <a href="#">Gallery</a>
             <a href="#">Skills</a>
             <a href="#">Events</a>
-            <button class="theme" onclick="toggleMode()"><img class="theme"></button>
+            <button type="submit" class="theme" onclick="toggleMode()"><img class="theme"></button>
             <button class="sign-in">Sign in</button>
         </div>
      </div>
@@ -250,8 +264,9 @@
         <h1>Empowering Collaboration,<br>Unlocking Potential</h1>
         <p>A passionate community of learners, creators, and collaborators, dedicated to mastering various skills within the vast realm of computer science.</p>
     </div>
-        <br><br>
+        
         <button class="sign-up">Sign Up</button>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div></div>
 </body>
 </html>
