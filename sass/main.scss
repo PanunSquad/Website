@@ -1,0 +1,32 @@
+//modified subtle theme colors
+
+
+$nav-pills-border-radius: 21px;
+$nav-pills-link-active-color: white;
+$nav-pills-link-active-bg: #bae5ff;
+$offcanvas-bg-color: #f6f7fc;
+
+
+$font-family-base: "Roboto";
+
+
+//import functions and variables
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+
+$custom-theme-colors: (
+    "altbutton": #bae5ff,
+    "altcard": #f1f6ff,
+    "altnav": #e9f0fc,
+    "altpagebg": #f6f7fc,
+    "darkblue": #0d0e4a,
+    "darkblue-muted": #2c1b4b
+);
+
+
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';

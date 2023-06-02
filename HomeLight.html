@@ -3,7 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <link href="/css/main.min.css" rel="stylesheet">
+    
+    <!--Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Squad</title>
     <style>
@@ -17,43 +20,98 @@
         .animate:hover {
             transform: scale(1.2);
         }
+
+        .iconfill {
+            color: #0d0e4a;
+        }
+
+        .rotate {
+            transition: transform 0.3s;
+        }
+
+        .rotate:hover {
+            transform: rotate(362deg);
+        }
+        .lnk {
+            transition: transform 0.3s;
+        }
+        .lnk:hover {
+            background-color: #1b004b21;
+            border-radius: 30px;
+            transform: scale(1.2);
+        }
+        .cardanimate {
+            transition: transform 0.3s;
+        }
+        /* .cardanimate:hover {
+            transform: perspective(830px) rotateX(3deg) rotateY(3deg);
+           
+        }*/
     </style>
 </head>
-<body>
+<body class="bg-altpagebg">
    <!--Navbar-->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary mx-3 mt-3 rounded-4">
+   <nav class="navbar navbar-expand-lg bg-altnav mx-3 mt-3 rounded-4">
     <div class="container-fluid">
-        <img class="animate"src="Assets/Logo.svg" alt="Logo" style="height: 83px; width: 83px;">
-      <a class="navbar-brand fw-semibold fs-3 align-items-start" href="#"></a><!--For branding in the navbar-->
-      
-      <div class="collapse navbar-collapse fs-4 mx-3" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active"href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"href="#">Gallery</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"href="#">Events</a> 
-            </li>
+        <picture class="me-4">
+            <a href="HomeLight.html">
+            <source media="(max-width:300px)" style="height: 83px; width: 83px;" srcset="Assets/LogoLight.svg">
+            <img class="animate img-fluid"src="Assets/LogoLight.svg" alt="Logo" style="height: 83px; width: 83px;"></a>
+        </picture>
+         
+        <div class="offcanvas text-darkblue offcanvas-end flex-grow-1 rounded-4 my-3 mx-2" id="navbarNav" aria-labelledby="NavbarOffcanvasLabel" data-bs-scroll="true" aria-modal="true" role="dialog">
+            
+
+            <div class="offcanvas-header bg-altnav rounded-4 px-4 pb-0">
+            
+                <h2 class="text-darkblue">Squad</h2>
+
+                <button type="button" class="btn-close btn-close-darkblue" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+            
+            <div class="offcanvas-body">
+                <ul class="navbar-nav nav-pills fs-4">
+                    <li class="nav-item my-2 md-mt-0">
+                        <a class="nav-link active px-4"href="#">Home</a>
+                    </li>
+                    <li class="nav-item lnk my-2 mx-3 md-mt-0">
+                        <a class="nav-link"href="#">Projects</a>
+                    </li>
+                    <li class="nav-item lnk my-2 mx-3 md-mt-0">
+                        <a class="nav-link"href="#">Resources</a>
+                    </li>
+                    <li class="nav-item lnk my-2 mx-3 md-mt-0">
+                        <a class="nav-link"href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item lnk my-2 mx-3 md-mt-0">
+                    <a class="nav-link"href="#">Skills</a>
+                    </li>
+                    <li class="nav-item lnk my-2 mx-3 d-mt-0">
+                        <a class="nav-link"href="#">Events</a> 
+                    </li>
+
+                    <div class="text-start d-lg-none my-2 md-mt-0">
+                        <a href="#" class="btn btn-altbutton btn-lg rounded-4 fs-3 px-4 animate">Sign in</a> 
+                    
+                        <button class="btn-lg btn-altinfo p-2 rounded-circle align-items-center bg-altbutton border-0 rotate" style="height: 54.02px; width: 54.02px; vertical-align: middle;" >
+                            <i class="bi bi-moon-fill iconfill fill = "#0d0e4a></i>
+                        </button>
+                    </div> 
+            </div>
+            
         </ul>
       </div>
       <div>
-          <a href="#" class="btn btn-info btn-lg rounded-4 fs-3 px-4 mx-3 animate">Sign in</a>
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-style: none; scale: 2.1;">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style=" border-style: none; scale: 1.82;">
             <i class="bi bi-list"></i>
-            </button>  
+        </button>
+
+        <button class="d-none d-lg-inline-block btn-lg btn-altinfo p-2 rounded-circle align-items-center bg-altbutton border-0 rotate" style="height: 54.02px; width: 54.02px; vertical-align: middle;" ><i class="bi bi-moon-fill iconfill fill = "#0d0e4a></i></button>
+                
+        <a href="#" class="d-none d-lg-inline-block btn btn-altbutton btn-lg rounded-4 text-darkblue fs-3 px-4 mx-2 animate">Sign in</a> 
+
+          
         </div>
     </div>
   </nav>
@@ -63,32 +121,34 @@
         <div class="container-lg">
             <div class="row justify-content-start align-items-center mt-4 mx-3">
                 
-                <div class="card my-4 rounded-4" style=" max-width: 1802px;">
-                    <div class="row g-0">
+                <div class="card cardanimate my-4 rounded-4 bg-altcard border-altbutton" style=" max-width: 1802px;">
+                    <div class="row g-0 p-2">
                         <!--Card-->
                       <div class="col-md-8">
                         <div class="card-body">
                             <h1>
-                                <div class="display-4 fw-bolder">
+                                <div class="display-4 mb-4 fw-bolder text-darkblue">
                                     Empowering Collaboration, Unlocking Potential
                                 </div>
-                                <div class="lead-4 text-muted mt-4">
+                                <div class="text-darkblue-muted mt-4 fw-light">
                                     A passionate community of learners, creators, and collaborators, dedicated to mastering various skills within the vast realm of computer science.
                                 </div>
                             </h1>
                         </div>
                     </div>
                     <!--Card Image-->
-                    <div class="col-md-4 mt-3 text-center text-md-center d-none d-md-flex" style="flex-wrap: wrap;">
-                        <img src="Assets/Sample.png" class="img-fluid rounded-4" alt="...">
-                        <p class="card-text my-2"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div class="col-md-4 mt-3 text-center text-md-center d-none d-md-flex" style="vertical-align: middle; align-items: center ;">
+                        <div class="height-full">
+                            <img src="Assets/Sample.png" class="img-fluid rounded-4 alt="...">
+                            <p class="card-text my-2"><small class="text-darkblue">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
             </div>
             
                 <div>
-                    <p class="lead text-muted my-3  ">Join the community</p>
-                    <a class="btn btn-primary btn-lg animate rounded-4 fs-3 px-4" href="SignUp.html" role="button">Sign up</a>
+                    <p class="lead text-darkblue-muted my-2  ">Join the community</p>
+                    <a class="btn btn-primary btn-lg animate rounded-4 fs-3 px-4" href="SignUpLight.html" role="button">Sign up</a>
                 </div>
             </div>
         </div>
